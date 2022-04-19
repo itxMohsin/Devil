@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my document</title>
+    <style>
+          .container{
+              height: 300px;
+              width: 300px;
+              background-color: cadetblue;
+              border: 2px solid black;
+              position: relative;
+              border-radius: 100%;
+              animation-name: mywork;
+              animation-duration: 5s;
+            animation-timing-function: linear;
+              animation-delay: 0.5s;
+              animation-direction: alternate;
+              animation-play-state:running ;
+              animation-iteration-count: infinite;
+          }
+              @keyframes mywork {
+                  0%{
+                      background-color: yellow;
+                      left:0px;
+                      top:0px;
+                  }
+                  25% {
+                      background-color: violet;
+                      left: 500px;
+                      top: 0px;       
+                  }
+                  50%{
+                      background-color: aquamarine;
+                      left: 500px;
+                      top: 500px;       
+                  }
+                  75%{
+                      background-color: tomato;
+                      left: 0;
+                      top: 500px;          
+                  }
+                  100%{
+                      background-color:khaki;
+                      left: 0px;
+                      top: 0px;          
+                  } }
+    </style>
+</head>
+<body>
+    <div class="container"></div>\ 
+</body>
+</html>
